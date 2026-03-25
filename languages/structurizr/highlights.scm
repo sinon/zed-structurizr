@@ -6,6 +6,18 @@
 
 (named_color) @string.special
 
+(shape_value) @string.special
+
+(border_value) @string.special
+
+(icon_position_value) @string.special
+
+(line_style_value) @string.special
+
+(routing_value) @string.special
+
+(boolean_value) @constant.builtin
+
 (number) @number
 
 (order) @number
