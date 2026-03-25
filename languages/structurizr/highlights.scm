@@ -37,6 +37,7 @@
   "views"
   "configuration"
   "archetypes"
+  "enterprise"
   "person"
   "softwareSystem"
   "softwaresystem"
@@ -61,7 +62,9 @@
   "autolayout"
   "animation"
   "systemLandscape"
+  "systemlandscape"
   "systemContext"
+  "systemcontext"
   "filtered"
   "dynamic"
   "deployment"
@@ -127,13 +130,31 @@
 (infrastructure_node
   identifier: (identifier) @type)
 
+(container_instance_simple
+  (identifier) @type)
+
+(container_instance_grouped
+  (identifier) @type)
+
+(software_system_instance_simple
+  (identifier) @type)
+
+(software_system_instance_grouped
+  (identifier) @type)
+
 (relationship
   source: (identifier) @type
   destination: (identifier) @type)
 
 (dynamic_relationship
-  source: (identifier) @variable
-  destination: (identifier) @variable)
+  source: (identifier) @type
+  destination: (identifier) @type)
+
+(dynamic_relationship_reference
+  relationship: (identifier) @type)
+
+(animation_block
+  value: (identifier) @type)
 
 (style_setting
   name: (identifier) @property)

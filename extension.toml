@@ -8,4 +8,4 @@ repository = "https://github.com/your-name/zed-structurizr"
 
 [grammars.structurizr]
 repository = "file:///Users/rob/dev/tree-sitter-structurizr"
-rev = "535b22990b972c9d80da2953f15224a884ad4126"
+rev = "faa08e5d918baa9bc1a66b425abe87e8cef2f2b5"

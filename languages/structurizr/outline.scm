@@ -56,12 +56,20 @@
   name: (_) @name) @item
 
 (container_instance
-  "containerInstance" @context
-  target: (identifier) @name) @item
+  (container_instance_simple
+    target: (identifier) @name)) @item
+
+(container_instance
+  (container_instance_grouped
+    target: (identifier) @name)) @item
 
 (software_system_instance
-  "softwareSystemInstance" @context
-  target: (identifier) @name) @item
+  (software_system_instance_simple
+    target: (identifier) @name)) @item
+
+(software_system_instance
+  (software_system_instance_grouped
+    target: (identifier) @name)) @item
 
 (system_landscape_view
   "systemLandscape" @name) @item
