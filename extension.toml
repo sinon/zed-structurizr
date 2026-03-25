@@ -1,0 +1,11 @@
+id = "structurizr"
+name = "Structurizr"
+version = "0.0.1"
+schema_version = 1
+authors = ["Rob Hand <146272+sinon@users.noreply.github.com>"]
+description = "Local-dev Zed language support scaffold for the Structurizr DSL."
+repository = "https://github.com/your-name/zed-structurizr"
+
+[grammars.structurizr]
+repository = "file:///Users/rob/dev/tree-sitter-structurizr"
+rev = "535b22990b972c9d80da2953f15224a884ad4126"

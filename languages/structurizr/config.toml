@@ -1,0 +1,4 @@
+name = "Structurizr"
+grammar = "structurizr"
+path_suffixes = ["dsl"]
+line_comments = ["// ", "# "]

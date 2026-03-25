@@ -1,0 +1,3 @@
+- `systemLandscape`, `systemContext` and other keywords are case sensitive in highlights (or grammar) but the `.dsl` is less case sensitive and supports `systemlandscape`.
+- `customer` node in `animation` group of `big-bank.dsl` the `"custom"` substring is highlighted as if it was a keyword.
+- `liveSecondaryDatabaseInstance = containerInstace` the identifier in the assignment does not match other assignments such as in `softwareSystem` or `container` groups.
