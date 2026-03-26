@@ -1,6 +1,6 @@
 # Structurizr DSL for Zed
 
-Zed language support for the [Structurizr DSL](https://docs.structurizr.com/dsl/language), a text-based DSL commonly used to describe [C4 architecture models](https://c4model.com/).
+Zed exention for the [Structurizr DSL](https://docs.structurizr.com/dsl/language), a text-based DSL commonly used to describe [C4 architecture models](https://c4model.com/).
 
 ## What this extension provides
 
@@ -11,13 +11,7 @@ Zed language support for the [Structurizr DSL](https://docs.structurizr.com/dsl/
 - folding queries for the major block forms supported by the grammar
 - text objects for block and comment navigation in Zed's Vim mode
 
-The extension loads the pinned public Tree-sitter grammar declared in `extension.toml`:
 
-```toml
-[grammars.structurizr]
-repository = "https://github.com/sinon/tree-sitter-structurizr"
-rev = "e2be52145c202a203e1ba0106e1c5d2e273534c6"
-```
 
 ## Language naming and discoverability
 
