@@ -11,6 +11,12 @@
 (views
   "views" @name) @item
 
+(branding
+  "branding" @name) @item
+
+(terminology
+  "terminology" @name) @item
+
 (styles
   "styles" @name) @item
 
@@ -22,6 +28,10 @@
 
 (person
   "person" @context
+  name: (_) @name) @item
+
+(enterprise
+  "enterprise" @context
   name: (_) @name) @item
 
 (software_system

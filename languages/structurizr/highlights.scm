@@ -2,6 +2,8 @@
 
 (string) @string
 
+(text_block_string) @string
+
 (hex_color) @string.special
 
 (named_color) @string.special
@@ -33,13 +35,17 @@
 (default_statement) @keyword
 
 [
+  "!const"
+  "!constant"
   "!include"
   "!identifiers"
   "!impliedRelationships"
   "!docs"
   "!adrs"
+  "!var"
   "!elements"
   "!element"
+  "!relationships"
 ] @preproc
 
 [
@@ -66,6 +72,7 @@
   "tag"
   "tags"
   "metadata"
+  "url"
   "name"
   "title"
   "include"
@@ -82,11 +89,18 @@
   "deployment"
   "custom"
   "styles"
+  "branding"
+  "terminology"
   "light"
   "dark"
   "element"
   "relationship"
+  "group"
+  "instanceOf"
   "properties"
+  "perspectives"
+  "perspective"
+  "healthCheck"
   "theme"
   "themes"
   "plantuml"

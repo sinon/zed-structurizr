@@ -1,11 +1,11 @@
 id = "structurizr"
-name = "Structurizr"
+name = "Structurizr DSL"
 version = "0.0.1"
 schema_version = 1
 authors = ["Rob Hand <146272+sinon@users.noreply.github.com>"]
-description = "Local-dev Zed language support scaffold for the Structurizr DSL."
-repository = "https://github.com/your-name/zed-structurizr"
+description = "Zed language support for the Structurizr DSL used to describe C4 architecture models."
+repository = "https://github.com/sinon/zed-structurizr"
 
 [grammars.structurizr]
-repository = "file:///Users/rob/dev/tree-sitter-structurizr"
-rev = "4fcd107d56a1887d93bf81e9cb13c193bf983283"
+repository = "https://github.com/sinon/tree-sitter-structurizr"
+rev = "e2be52145c202a203e1ba0106e1c5d2e273534c6"
