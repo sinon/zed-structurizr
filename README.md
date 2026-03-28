@@ -1,3 +1,6 @@
+> [!WARNING]
+> This is an unreleased Zed extension under active development. Currently it needs to be manually installed.
+
 # Structurizr DSL for Zed
 
 Zed exention for the [Structurizr DSL](https://docs.structurizr.com/dsl/language), a text-based DSL commonly used to describe [C4 architecture models](https://c4model.com/).
