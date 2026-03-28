@@ -112,6 +112,14 @@
   "users"
 ] @keyword
 
+; Match unquoted `url https://...` values explicitly because they still parse as
+; `bare_value` at the grammar layer.
+(url_statement
+  value: [
+    (bare_value)
+    (string)
+  ] @string.special.url)
+
 [
   "{"
   "}"
