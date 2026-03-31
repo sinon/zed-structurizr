@@ -190,6 +190,12 @@
 (animation_block
   value: (identifier) @type)
 
+(include_statement
+  value: (identifier) @type)
+
+(animation_block
+  value: (identifier) @type)
+
 (style_setting
   name: (identifier) @property)
 
