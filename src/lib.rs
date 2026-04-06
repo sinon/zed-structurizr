@@ -3,7 +3,7 @@ use std::fs;
 use zed_extension_api::{self as zed, LanguageServerId, Result, settings::LspSettings};
 
 const LANGUAGE_SERVER_NAME: &str = "strz";
-const LANGUAGE_SERVER_OVERRIDE: &str = "STRUCTURIZR_LSP_BIN";
+const LANGUAGE_SERVER_OVERRIDE: &str = "STRZ_LSP_BIN";
 
 struct StructurizrExtension;
 
