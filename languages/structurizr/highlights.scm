@@ -2,23 +2,9 @@
 
 (string) @string
 
-(text_block_string) @string
-
 (hex_color) @string.special
 
 (named_color) @string.special
-
-(shape_value) @string.special
-
-(border_value) @string.special
-
-(icon_position_value) @string.special
-
-(line_style_value) @string.special
-
-(routing_value) @string.special
-
-(boolean_value) @constant.builtin
 
 (number) @number
 
@@ -35,17 +21,13 @@
 (default_statement) @keyword
 
 [
-  "!const"
-  "!constant"
   "!include"
   "!identifiers"
   "!impliedRelationships"
   "!docs"
   "!adrs"
-  "!var"
   "!elements"
   "!element"
-  "!relationships"
 ] @preproc
 
 [
@@ -55,7 +37,6 @@
   "views"
   "configuration"
   "archetypes"
-  "enterprise"
   "person"
   "softwareSystem"
   "softwaresystem"
@@ -81,26 +62,17 @@
   "autolayout"
   "animation"
   "systemLandscape"
-  "systemlandscape"
   "systemContext"
-  "systemcontext"
   "filtered"
   "dynamic"
   "deployment"
   "custom"
   "styles"
-  "branding"
-  "terminology"
   "light"
   "dark"
   "element"
   "relationship"
-  "group"
-  "instanceOf"
   "properties"
-  "perspectives"
-  "perspective"
-  "healthCheck"
   "theme"
   "themes"
   "plantuml"
@@ -112,8 +84,8 @@
   "users"
 ] @keyword
 
-; Match unquoted `url https://...` values explicitly because they still parse as
-; `bare_value` at the grammar layer.
+; Unquoted `url https://...` values parse as `bare_value`, so capture the value
+; explicitly to keep URL statements visually coherent in editors.
 (url_statement
   value: [
     (bare_value)
@@ -164,37 +136,37 @@
 (infrastructure_node
   identifier: (identifier) @type)
 
-(container_instance_simple
-  (identifier) @type)
+(container_instance
+  identifier: (identifier) @type)
 
-(container_instance_grouped
-  (identifier) @type)
+(container_instance
+  target: (identifier) @type)
 
-(software_system_instance_simple
-  (identifier) @type)
+(container_instance
+  deployment_group: (identifier) @type)
 
-(software_system_instance_grouped
-  (identifier) @type)
+(software_system_instance
+  identifier: (identifier) @type)
+
+(software_system_instance
+  target: (identifier) @type)
+
+(software_system_instance
+  deployment_group: (identifier) @type)
 
 (relationship
-  source: (identifier) @type
-  destination: (identifier) @type)
+  source: (identifier) @variable
+  destination: (identifier) @variable)
 
 (dynamic_relationship
-  source: (identifier) @type
-  destination: (identifier) @type)
-
-(dynamic_relationship_reference
-  relationship: (identifier) @type)
-
-(animation_block
-  value: (identifier) @type)
+  source: (identifier) @variable
+  destination: (identifier) @variable)
 
 (include_statement
-  value: (identifier) @type)
+  value: (identifier) @variable)
 
 (animation_block
-  value: (identifier) @type)
+  value: (identifier) @variable)
 
 (style_setting
   name: (identifier) @property)
