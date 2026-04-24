@@ -8,7 +8,7 @@ repository = "https://github.com/sinon/zed-structurizr"
 
 [grammars.structurizr]
 repository = "https://github.com/sinon/tree-sitter-structurizr"
-rev = "3038d821f68fa30f889c0e0407c4e5b3af29cc84"
+rev = "66a63203dfb2f15593b8a0410fdf43a7f9a8e065"
 path = "crates/strz-grammar"
 
 [language_servers.strz-lsp]

@@ -30,8 +30,19 @@
   "person" @context
   name: (_) @name) @item
 
+(group
+  "group" @context
+  name: (_) @name) @item
+
 (enterprise
   "enterprise" @context
+  name: (_) @name) @item
+
+(archetype_definition
+  identifier: (identifier) @name) @item
+
+(archetype_instance
+  kind: (identifier) @context
   name: (_) @name) @item
 
 (software_system
@@ -57,6 +68,10 @@
   "deploymentEnvironment" @context
   name: (_) @name) @item
 
+(deployment_group
+  "deploymentGroup" @context
+  name: (_) @name) @item
+
 (deployment_node
   "deploymentNode" @context
   name: (_) @name) @item
@@ -65,9 +80,56 @@
   "infrastructureNode" @context
   name: (_) @name) @item
 
-(container_instance target: (identifier) @name) @item
+(container_instance
+  "containerInstance" @context
+  target: (identifier) @name) @item
 
-(software_system_instance target: (identifier) @name) @item
+(software_system_instance
+  "softwareSystemInstance" @context
+  target: (identifier) @name) @item
+
+(instance_of
+  "instanceOf" @context
+  target: (identifier) @name) @item
+
+(relationship
+  identifier: (identifier) @name) @item
+
+(docs_directive
+  "!docs" @context
+  path: (_) @name) @item
+
+(adrs_directive
+  "!adrs" @context
+  path: (_) @name) @item
+
+(include_directive
+  "!include" @context
+  value: (_) @name) @item
+
+(const_directive
+  "!const" @context
+  name: (_) @name) @item
+
+(constant_directive
+  "!constant" @context
+  name: (_) @name) @item
+
+(var_directive
+  "!var" @context
+  name: (_) @name) @item
+
+(elements_directive
+  "!elements" @context
+  expression: (_) @name) @item
+
+(relationships_directive
+  "!relationships" @context
+  expression: (_) @name) @item
+
+(element_directive
+  "!element" @context
+  target: (_) @name) @item
 
 (system_landscape_view
   "systemLandscape" @name) @item
@@ -116,3 +178,7 @@
 
 (dark_styles
   "dark" @name) @item
+
+(perspective_definition
+  "perspective" @context
+  name: (_) @name) @item
