@@ -47,7 +47,7 @@ To test the local LSP integration:
     "strz-lsp": {
       "binary": {
         "path": "~/path-to/strz",
-        "args": ["server"]
+        "arguments": ["server"]
       }
     }
   }
